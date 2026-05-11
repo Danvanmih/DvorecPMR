@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1d1d1d;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Верхняя панель */
+
+.topbar{
+    width: 100%;
+    height: 70px;
+
+    background: #111;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+.menu-btn{
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2f2f2f;
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+.logo{
+    margin: auto;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Боковая панель */
+
+.sidebar{
+    width: 280px;
+    height: 100vh;
+
+    background: #bdbdbd;
+
+    position: fixed;
+    top: 70px;
+    left: 0;
+
+    padding: 15px;
+
+    overflow-y: auto;
+
+    transition: 0.3s;
+}
+
+.sidebar.hidden{
+    left: -300px;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    margin-bottom: 10px;
+}
+
+.menu a,
+.dropdown-btn,
+.dropdown-sub-btn{
+    width: 100%;
+
+    display: block;
+
+    padding: 12px;
+
+    background: #d9d9d9;
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+    color: black;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.menu a:hover,
+.dropdown-btn:hover,
+.dropdown-sub-btn:hover{
+    background: white;
+}
+
+/* Выпадающее меню */
+
+.submenu{
+    display: none;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.submenu.active{
+    display: block;
+}
+
+/* Подменю */
+
+.submenu-second{
+    display: none;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.submenu-second.active{
+    display: block;
+}
+
+/* Контент */
+
+.content{
+    margin-left: 300px;
+    margin-top: 100px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.content.full{
+    margin-left: 40px;
+}
+
+/* Hero */
+
+.hero{
+    background: #d9d9d9;
+    color: black;
+
+    border-radius: 15px;
+
+    padding: 40px;
+
+    margin-bottom: 40px;
+}
+
+.hero h1{
+    margin-bottom: 20px;
+
+    font-size: 42px;
+}
+
+/* Карточки */
+
+.cards{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+}
+
+.card{
+    background: #d9d9d9;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    color: black;
+
+    text-align: center;
+
+    padding-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.card h3{
+    margin-top: 15px;
+}
+
+.card p{
+    margin-top: 10px;
+}
+
+/* Адаптив */
+
+@media(max-width: 900px){
+
+    .sidebar{
+        left: -300px;
+    }
+
+    .sidebar.show{
+        left: 0;
+    }
+
+    .content{
+        margin-left: 0;
+    }
+}
