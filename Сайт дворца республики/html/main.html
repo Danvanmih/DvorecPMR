@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дворец Республики</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Верхняя панель -->
+    <header class="topbar">
+
+        <button class="menu-btn" id="menuToggle">
+            ☰
+        </button>
+
+        <div class="logo">
+            ДВОРЕЦ РЕСПУБЛИКИ
+        </div>
+
+    </header>
+
+    <!-- Боковое меню -->
+    <aside class="sidebar" id="sidebar">
+
+        <ul class="menu">
+
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Приветствие</a></li>
+
+            <!-- Выпадающее меню -->
+            <li class="dropdown">
+
+                <button class="dropdown-btn">
+                    Коллективы
+                </button>
+
+                <ul class="submenu">
+
+                    <li class="dropdown-sub">
+
+                        <button class="dropdown-sub-btn">
+                            Хор
+                        </button>
+
+                        <!-- Подменю -->
+                        <ul class="submenu-second">
+
+                            <li><a href="#">Солисты</a></li>
+                            <li><a href="#">Дирижеры</a></li>
+                            <li><a href="#">История</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">Цирк</a></li>
+                    <li><a href="#">Симф. Оркестр</a></li>
+                    <li><a href="#">"Виорика"</a></li>
+                    <li><a href="#">"Либерти"</a></li>
+
+                </ul>
+
+            </li>
+
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Афиша</a></li>
+            <li><a href="#">Арт-монитор</a></li>
+            <li><a href="#">Арт-прожектор</a></li>
+            <li><a href="#">Инфо</a></li>
+            <li><a href="#">Контакты</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Контент -->
+    <main class="content">
+
+        <section class="hero">
+            <h1>Приднестровский Государственный Хор</h1>
+
+            <p>
+                Здесь будет ваш контент, фотографии и описание.
+            </p>
+        </section>
+
+        <!-- Карточки -->
+        <section class="cards">
+
+            <div class="card">
+                <img src="../data/singer1.jpg" alt="">
+                <h3>Алиса Иванова</h3>
+                <p>Сопрано</p>
+            </div>
+
+            <div class="card">
+                <img src="../data/singer2.jpg" alt="">
+                <h3>Алексей Петров</h3>
+                <p>Тенор</p>
+            </div>
+
+            <div class="card">
+                <img src="../data/singer3.jpg" alt="">
+                <h3>Анжелика Вухобунь</h3>
+                <p>Альт</p>
+            </div>
+
+            <div class="card">
+                <img src="../data/singer4.jpg" alt="">
+                <h3>Иоан Вставьвглаз</h3>
+                <p>Бас</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
